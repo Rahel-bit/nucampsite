@@ -29,7 +29,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4"> 
-                    <a href="#reserveForm"><button class="btn btn-info btn-lg text-nowrap">Reserve Campsite</button></a> 
+                    <a href="#reserveForm" role="button" class="btn btn-info btn-lg text-nowrap">Reserve Campsite</a> 
                 </div>
             </div>
         </div>
@@ -108,11 +108,11 @@
                     Reserve a Campsite
                 </h3>
                 <div class="card-body">
-                    <form id="reserveForm" class="form-group form-group col-form-label" action="">
-                        <div class="row">
-                            <label for="numCampers" class="col-sm">Number of Campers</label>
-                            <div class="col-sm">
-                                <select name="numCampers" id="numCampers">
+                    <form id="reserveForm" action="#nowhere">
+                        <div class="row form-group">
+                            <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col">
+                                <select name="numCampers" id="numCampers" class="form-control">
                                     <option value="Select">Select...</option>    
                                     <option value="1">1</option>    
                                     <option value="2">2</option>    
@@ -123,14 +123,16 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <label for="date" class="col-sm-6">Date</label>
-                            <div col-sm-6>
-                                <input type="date" name="date" id="date" placeholder="Date">
+
+                        <div class="row form-group">
+                            <label for="date" class="col-form-label col-sm-6">Date</label>
+                            <div class="col">
+                                <input class="form-control" type="date" name="date" id="date" placeholder="Date">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col mt-3">
+                        
+                        <div class="row form-group">
+                            <div class="col">
                                 <button class="btn btn-primary" type="submit">Search</button>
                             </div>
                         </div>
